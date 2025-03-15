@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('SHI1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgba(14, 1, 1, 0.971);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid limegreen;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .profile-text {
+            background: white;
+            border: 3px solid limegreen;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 400px;
+            color: black;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            background: rgba(244, 244, 247, 0.895);
+            backdrop-filter: blur(10px);
+            border: 3px solid limegreen;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+            padding: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background: rgba(240, 6, 252, 0.962);
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-section">
+        <img src="thakur.jpg" alt="Aditya Kumar" class="profile-image">
+        <div class="profile-text">
+            <h2>Aditya Kumar</h2>
+        <p>Hi, My name is Aditya kumar.Currently i'll pursuing my bachlor's degree in Data Science Engineering from the
+            Oriental institute of science and technology,Bhopal and i am passionate Web Developer,Graphic Designer,Data
+            Analyst and Web Designer.</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="box" onclick="showInfo('About Me')">About Me<br><br><small>A passionate B.Tech Data Science student
+                eager to explore and innovate in the field of Data Science.Enthusiastic about solving Data problems
+                using Data Analysing.</small></div>
+        <div class="box" onclick="showInfo('Skills')">Skills<br><br><small>1. C++(Basic)<br><br>2. SQL(Basic)<br><br>3.
+                Data Analyst</small></div>
+        <div class="box" onclick="showInfo('Education')">Education<br><br><br><small>B.Tech-Data Science Engineering
+                [2024-2028]<br><br> Intermediate from BSEB [2023]<br><br> Matriculation from BSEB [2021]</small></div>
+        <div class="box" onclick="showInfo('Projects')">Projects<br><br><small>1. AI Based photo editor.<br><br>2.
+                Calculator.<br><br>3. Chatbot</small></div>
+        <div class="box" onclick="showInfo('Certifications')">Certifications<br><br><small>1. Introduction Data Science
+                by IBM.<br><br>2. Python course completion certification.</small></div>
+        <div class="box" onclick="showInfo('Contact')">Contact<br><br><small>Mobile No: 7050970040<br> <br>Email-
+                adityathakur705040@gmail.com<br><br>Github- https://github.com/adityathakur009</small></div>
+    </div>
+    <script>
+        function showInfo(section) {
+            alert(section + " section content will be displayed here.");
+        }
+    </script>
+</body>
+
+</html>
